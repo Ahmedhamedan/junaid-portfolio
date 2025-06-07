@@ -1,0 +1,342 @@
+/* =============== BASE =============== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #111;
+  transition: all 0.3s ease-in-out;
+}
+
+.dark {
+  background: #111;
+  color: #eee;
+}
+
+.dark .home-section,
+.dark .section-wrapper {
+  background: #111;
+  color: #eee;
+}
+
+.dark .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+/* =============== NAVBAR =============== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffffee;
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 6px 12px;
+  transition: 0.3s;
+}
+
+.navbar li:hover {
+  color: #007BFF;
+}
+
+.dark .navbar {
+  background: #111111ee;
+}
+
+.dark .navbar li {
+  color: #eee;
+}
+
+/* =============== MOBILE NAV HEADER =============== */
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #111;
+}
+
+.dark .hamburger {
+  color: #eee;
+}
+
+/* === DARK TOGGLE POSITIONING === */
+.dark-toggle-wrapper {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.dark-toggle-wrapper.mobile {
+  position: relative;
+  margin: 10px auto 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-btn {
+  background: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.dark .toggle-btn {
+  background: #333;
+  color: #fff;
+}
+
+/* =============== SECTIONS =============== */
+.home-section {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.summary {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.download-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.download-btn.center {
+  display: block;
+  margin: 100px auto 30px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 16px;
+  width: fit-content;
+}
+
+.section-wrapper {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  color: #111;
+  padding: 20px;
+  border-radius: 16px;
+  max-width: 300px;
+  min-height: 220px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: rotateY(5deg) scale(1.03);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.card h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.card small {
+  font-size: 13px;
+  color: #666;
+}
+
+.card .tag {
+  display: inline-block;
+  background: #007BFF;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 6px;
+}
+
+.card svg {
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+/* =============== FILTER BUTTONS =============== */
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.filter-buttons button {
+  background: #eaeaea;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.filter-buttons .active,
+.filter-buttons button:hover {
+  background: #007BFF;
+  color: white;
+}
+
+/* =============== CERTIFICATIONS POLISH =============== */
+#certifications .card-grid {
+  justify-content: center;
+}
+
+#certifications .card {
+  min-width: 260px;
+  max-width: 320px;
+  padding: 24px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certifications .card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+.dark #certifications .card {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+/* =============== BADGE =============== */
+.status-badge {
+  background: #007BFF;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+  animation: pulseGlow 1.8s infinite ease-in-out;
+  display: inline-block;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 16px rgba(0, 123, 255, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+  }
+} 
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll to Top */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Dark Mode Toggle Wrapper */
+.dark-toggle-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+@media (max-width: 768px) {
+  .dark-toggle-wrapper {
+    top: 80px;
+  }
+}
+
+/* Sticky Navbar (already in your file, just make sure it's sticky) */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
