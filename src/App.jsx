@@ -11,7 +11,6 @@ import Testimonials from "./components/Testimonials";
 import ScrollToTop from "./components/ScrollToTop";
 
 import "./style/global.css";
-import projectPDF from "./assets/project-showcase.pdf";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -43,11 +42,6 @@ function App() {
           {isDarkMode ? "☀️" : "🌙"}
         </button>
       </div>
-
-      {/* PDF Download */}
-      <a href={projectPDF} download className="download-btn center">
-        📄 Download Project Showcase
-      </a>
 
       {/* Sections */}
       <Home />
