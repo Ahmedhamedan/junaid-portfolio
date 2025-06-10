@@ -12,7 +12,7 @@ function Home() {
       </h2>
       <img src={profileImage} alt="Profile" className="profile-img" />
       <h2>Mohammed Junaid</h2>
-      <h3>Quality assurance process | Improvement specialist</h3>
+      <h3>Quality Assurance | Process Improvement Specialist</h3>
       <p className="summary">
         Detail-oriented Quality Assurance Specialist with 3+ years of experience supporting project lifecycles, managing cross-functional teams, and coordinating documentation, procurement, and vendor communications in engineering and manufacturing environments. Skilled in organizing schedules, tracking project deliverables, and maintaining compliance with ISO 9001 and safety regulations.
       </p>
