@@ -8,7 +8,7 @@ const Certifications = () => {
         <div className="card">
           <h3>ASME G&T</h3>
           <p>
-            Pursuing ASME Geometric Dimensioning & Tolerancing (GD&T) training to enhance mechanical design accuracy.
+            ASQ Quality inspector certification CQI.
           </p>
           <p>
             <span className="status-badge">On-going</span>
